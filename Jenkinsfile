@@ -1,6 +1,12 @@
 pipeline{
     agent any
     stages{
+        stage("Cloning"){
+            steps{
+                echo 'Cloning the Repo'
+                checkout scm
+            }
+        }
         stage("Install"){
             steps{
                 echo 'Installing packages'
