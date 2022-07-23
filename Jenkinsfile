@@ -4,6 +4,7 @@ pipeline{
         stage("Install"){
             steps{
                 echo 'Installing packages'
+                sh 'apt update && apt install python3-pip'
             }
         }
         stage("Build"){
