@@ -4,7 +4,7 @@ pipeline{
         stage("Install"){
             steps{
                 echo 'Installing packages'
-                sh 'sudo apt update && sudo apt install python3-pip'
+                sh 'python3 pip install -r requirements.txt'
             }
         }
         stage("Build"){
