@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             sh echo omolewa
+            sh echo jeffe
         }
     }
 }
