@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                echo omolewa
+                sh echo omolewa
             }
         }
     }
